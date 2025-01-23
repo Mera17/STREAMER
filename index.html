@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>STREAMER</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+		<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/logo1.png" />
+</head>
+<body class="homepage is-preload">
+	<div id="page-wrapper">
+			<!-- Header -->
+			<div id="header">
+				<!-- Inner -->
+				<div class="inner">
+					<header>
+		<!-- Reemplazando el texto "Doxmer" por una imagen -->
+				<head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para la animación de aparición suave */
+        #logo {
+            opacity: 0; /* Inicia invisible */
+            transform: translateY(-20px); /* Desplaza hacia arriba inicialmente */
+            animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
+        }
+
+        /* Definición de la animación */
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Termina visible */
+                transform: translateY(0); /* Vuelve a su posición original */
+            }
+        }
+    </style>
+</head>
+    <h1 style="text-align: center;">
+        <a href="#" id="logo-container" onclick="event.preventDefault();" style="display: inline-block; max-width: 200px;">
+            <img id="logo" src="images/logo1.png" alt="Doxmer" style="width: 100%; height: auto;">
+        </a>
+    </h1>
+    <p style="text-align: center; font-size: 28px; margin-top: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase;">STREAMER</p>         
+</body>
+ <div style="text-align: center; margin-top: 15px;">
+</div>
+
+						<hr />
+<p class="fade-in">Descubre nuestra selección de cuentas premium de streaming a precios accesibles. Disfruta de tus series, películas y música favoritas sin interrupciones ni límites. ¡Fácil, rápido y seguro!</p>
+
+				</div>
+			
+				<!-- Logo Yape en la esquina inferior derecha -->
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <div onclick="openYapeModal()" style="cursor: pointer; background: #994caf; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); overflow: hidden;">
+        <img src="images/yape.png" alt="Yape Logo" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+</div>
+
+<!-- Modal Yape -->
+<div id="yapeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; text-align: center;">
+    <div style="background: rgb(215, 211, 211); border-radius: 10px; padding: 20px; margin: 10% auto; max-width: 300px; position: relative;">
+        <span onclick="closeYapeModal()" style="position: absolute; top: 10px; right: 15px; font-size: 1.5em; color: #555; cursor: pointer;">&times;</span>
+        
+        <!-- Texto introductorio -->
+        <p style="color: #2f2f2f; font-family: Arial, sans-serif; font-size: 1em; margin-bottom: 10px;">
+            <strong>ﾠDespués de elegir tu servicio</strong>
+        </p>
+        
+        <!-- Título del modal -->
+        <h3 style="color: #b146ad; margin-bottom: 15px;">Escanea el QR</h3>
+        
+        <!-- Imagen del QR (corregida) -->
+        <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+            <img src="images/yapeqr.jpeg" alt="Código QR Yape" style="max-width: 100%; height: auto; border-radius: 10px;">
+        </div>
+
+        <!-- Espacio entre la imagen y el número de celular -->
+        <div style="margin-top: 15px;"></div>
+
+        <!-- Número de celular -->
+        <p style="color: #555; font-family: Arial, sans-serif; font-size: 1em;">Envia tu comprobante de pago y de inmediato su pedido estará listo.<strong></strong></p>
+    </div>
+</div>
+</div>
+
+<!-- Scripts -->
+<script>
+    function openYapeModal() {
+        document.getElementById('yapeModal').style.display = 'block';
+    }
+    function closeYapeModal() {
+        document.getElementById('yapeModal').style.display = 'none';
+    }
+</script>
+			
+				<!-- Nav -->
+				
+			</div>
+			
+						</nav>
+
+				</div>
+
+
+			<script>
+					function enviarWhatsApp(producto, precio) {
+						const numeroTelefono = "51986682144"; // Reemplaza con tu número de WhatsApp
+						const mensaje = `Hola, estoy interesado en este servicio: ${producto} por s/. ${precio}`;
+						const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
+						window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
+					}
+				</script>
+
+			<!-- Carousel -->
+				<section class="carousel">
+					<div class="reel">
+
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/NETFLIX.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">NETFLIX</a></h3>
+							</header>
+							<div class="price-tag">s/. 12</div>
+							<p><button onclick="enviarWhatsApp('Netflix', 12)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/disney.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">Disney Plus + Star Plus + ESPN</a></h3>
+							</header>
+							<div class="price-tag">s/. 10</div>
+							<p><button onclick="enviarWhatsApp('Disney Plus + Star Plus + ESPN', 10)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/hbo.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">HBO MAX</a></h3>
+							</header>
+							<div class="price-tag">s/. 6</div>
+							<p><button onclick="enviarWhatsApp('HBO MAX', 6)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/crunchy.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">Crunchyroll</a></h3>
+							</header>
+							<div class="price-tag">s/. 5</div>
+							<p><button onclick="enviarWhatsApp('Crunchyroll', 5)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/spoty.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">Spotify Premium</a></h3>
+							</header>
+							<div class="price-tag">s/. 10</div>
+							<p><button onclick="enviarWhatsApp('Spotify Premium', 10)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/canvapro.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">Canva Pro</a></h3>
+							</header>
+							<div class="price-tag">s/. 6</div>
+							<p><button onclick="enviarWhatsApp('Canva Pro', 6)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/youtube.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">Youtube Premium + Youtube Music</a></h3>
+							</header>
+							<div class="price-tag">s/. 8.5</div>
+							<p><button onclick="enviarWhatsApp('Youtube Premium + Youtube Music', 8.5)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/capcup.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">CapCut Pro</a></h3>
+							</header>
+							<div class="price-tag">Sin stock</div>
+							<p><button onclick="enviarWhatsApp('CapCut Pro', 0.00)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+					
+						<article>
+							<a href="#no" class="image featured"><img src="images/Chat GPT.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">Chat GPT Pro</a></h3>
+							</header>
+							<div class="price-tag">s/. 20</div>
+							<p><button onclick="enviarWhatsApp('Chat GPT Pro', 20)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+						<article>
+							<a href="#no" class="image featured"><img src="images/turnitin.jpeg" alt="" /></a>
+							<header>
+								<h3><a href="#no">Turnitin</a></h3>
+							</header>
+							<div class="price-tag">s/. 20</div>
+							<p><button onclick="enviarWhatsApp('Turnitin', 20)" class="btn-pedir-ahora">Pedir ahora</button></p>
+						</article>
+						<article>
+							<a href="#no" class="image featured"><img src="images/antecional.png" alt="" /></a>
+							<header>
+								<h3><a href="#no">¡Y mucho más!</a></h3>
+							</header>
+							<p>Si no encuentras tu plataforma favorita, consultame.</p>
+							
+							<p><a href="https://wa.me/51986682144" class="btn-pedir-ahora">Consultar ahora</a></p>
+						</article>
+
+					</div>
+				</section>
+				<!-- Features -->
+				<div class="wrapper style1">
+
+					<section id="features" class="container special actas-section">
+						<header>
+							
+						</div>
+					</section>
+
+		
+				</article>
+			</div>
+			
+			
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+
+							
+
+							
+										
+								</section>
+
+							<!-- Photos -->
+								
+								</section>
+
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+								<section class="contact">
+									<header>
+										<h3>Gracias por visitar !</h3>
+									</header>
+								</section>
+								
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Todos los derechos reservados </li><li>Mera </a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
