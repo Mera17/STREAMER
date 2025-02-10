@@ -123,7 +123,6 @@
 				<section class="carousel">
 					<div class="reel">
 
-					
 						<article>
 							<a href="#no" class="image featured"><img src="images/NETFLIX.jpeg" alt="" /></a>
 							<header>
@@ -132,8 +131,64 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 10
 							</div>
-							<p><button onclick="enviarWhatsApp('Netflix', 10)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Netflix', 10)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>📵 No editar, ni eliminar los perfiles.</li>
+								<li>📵 Prohibido cambiar de contraseña.</li>
+								<li>📵 Prohibido ingresar desde un segundo dispositivo.</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>
 						</article>
+						
+						<style>
+							.btn-pedir-ahora {
+								display: block;
+								padding: 10px 20px;
+								font-size: 16px;
+								border: none;
+								background-color: #28a745;
+								color: white;
+								border-radius: 5px;
+								cursor: pointer;
+								font-weight: bold;
+								text-align: center;
+								box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+							}
+							.btn-pedir-ahora:hover {
+								background-color: #218838;
+							}
+							.btn-condiciones {
+								width: 35px;
+								height: 35px;
+								border: none;
+								background-color: #197c97;
+								color: white;
+								font-size: 18px;
+								cursor: pointer;
+								border-radius: 50%;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								font-weight: bold;
+								box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+								padding: 0;
+							}
+							.btn-condiciones:hover {
+								background-color: #0098b3;
+							}
+						</style>
+						
+						<script>
+							function toggleCondiciones(button) {
+								var texto = button.parentElement.nextElementSibling;
+								texto.style.display = (texto.style.display === 'none') ? 'block' : 'none';
+							}
+						</script>						
+						
 						<style>
 							/* Animación de rebote para el precio */
 							@keyframes bounce {
@@ -185,7 +240,16 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 10
 							</div>
-							<p><button onclick="enviarWhatsApp('Disney Plus + Star Plus + ESPN', 10)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Disney Plus + Star Plus + ESPN', 10)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>📵 Prohibido cambiar de contraseña.</li>
+								<li>📵 Prohibido ingresar desde un segundo dispositivo.</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>
 						</article>
 					
 						<article>
@@ -196,7 +260,16 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 6
 							</div>
-							<p><button onclick="enviarWhatsApp('HBO MAX', 6)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('HBO MAX', 6)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>📵 Prohibido ingresar desde un segundo dispositivo</li>
+								<li>📵 Prohibido cambiar de contraseña.</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>						
 						</article>
 					
 						<article>
@@ -207,8 +280,18 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 5
 							</div>
-							<p><button onclick="enviarWhatsApp('Crunchyroll', 5)" class="btn-pedir-ahora">Pedir ahora</button></p>
-						</article>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Crunchyroll', 5)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>📵 Prohibido ingresar desde un segundo dispositivo</li>
+								<li>Solo está permitido poner el número y nombre en su perfil asignado.</li>
+								<li>📵 Prohibido cambiar de contraseña.</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>					
+							</article>
 					
 						<article>
 							<a href="#no" class="image featured"><img src="images/spoty.jpeg" alt="" /></a>
@@ -218,8 +301,17 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 10
 							</div>
-							<p><button onclick="enviarWhatsApp('Spotify Premium', 10)" class="btn-pedir-ahora">Pedir ahora</button></p>
-						</article>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Spotify Premium', 10)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>Te va proporcionar el correo y la contraseña de la cuenta de Spotify, tener en cuenta que la cuenta es 100% renovable.</li>
+								<li>📵 No realizar cambios en la cuenta.</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>					
+							</article>
 					
 						<article>
 							<a href="#no" class="image featured"><img src="images/canvapro.jpeg" alt="" /></a>
@@ -229,7 +321,16 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 5
 							</div>
-							<p><button onclick="enviarWhatsApp('Canva Pro', 5)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Canva Pro', 5)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Activación inmediata, con tu mismo correo.</li>
+								<li>Sin limitaciones, diseña y disfruta al máximo.</li>
+								<li>1 mes: S/. 5</li>
+								<li>1 año: S/. 30</li>
+							</ul>
 						</article>
 						<article>
 							<a href="#no" class="image featured"><img src="images/Chat GPT.jpeg" alt="" /></a>
@@ -239,7 +340,17 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 20
 							</div>
-							<p><button onclick="enviarWhatsApp('Chat GPT Pro', 20)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Chat GPT Pro', 20)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>📵 No modifiques ningún dato de la cuenta para garantizar su correcto funcionamiento.</li>
+								<li>Dado que esta es una cuenta compartida, es importante no eliminar el historial para evitar afectar el trabajo de otros usuarios. </li>
+								<li>✅ Todos los beneficios PRO.</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>						
 						</article>
 						<article>
 							<a href="#no" class="image featured"><img src="images/youtube.jpeg" alt="" /></a>
@@ -249,7 +360,16 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 8.5
 							</div>
-							<p><button onclick="enviarWhatsApp('Youtube Premium + Youtube Music', 8.5)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Youtube Premium + Youtube Music', 8.5)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>📵 Prohibido ingresar desde un segundo dispositivo</li>
+								<li>📵 No modificar nada sin avisar</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>							
 						</article>
 					
 						<article>
@@ -260,7 +380,17 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 12
 							</div>
-							<p><button onclick="enviarWhatsApp('CapCut Pro', 12)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('CapCut Pro', 12)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>Usa Iniciar sesión con correo electrónico.</li>
+								<li>📵 No vincules con Google.</li>
+								<li>📵 No modifiques el perfil, ni la contraseña, ni método de pago, ni vincules redes sociales.</li>
+								<li>📝Si incumple se detectará y perderá la garantía.</li>
+							</ul>						
 						</article>
 					
 						<article>
@@ -271,7 +401,15 @@
 							<div class="price-tag" style="background: linear-gradient(90deg, rgba(20, 149, 39, 0.85), rgba(40, 115, 77, 0.85)); color: #ffffff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px;">
 								S/. 20
 							</div>
-							<p><button onclick="enviarWhatsApp('Turnitin', 20)" class="btn-pedir-ahora">Pedir ahora</button></p>
+							<p style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+								<button onclick="enviarWhatsApp('Turnitin', 20)" class="btn-pedir-ahora">Pedir ahora</button>
+								<button class="btn-condiciones" onclick="toggleCondiciones(this)">?</button>
+							</p>
+							<ul class="condiciones-texto" style="display: none; font-size: 0.75em; color: #555; margin-top: 8px; text-align: left; padding: 10px; background: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); list-style-type: disc; padding-left: 20px;">
+								<li>Servicio de 30 días 🚀⭐</li>
+								<li>La licencia de uso es para un solo dispositivo.</li>
+								<li>CONSULTAS ILIMITADAS!!</li>
+							</ul>						
 						</article>
 						<article>
 							<a href="#no" class="image featured"><img src="images/atencional.jpeg" alt="" /></a>
@@ -279,7 +417,6 @@
 								<h3><a href="#no">¡Y mucho más!</a></h3>
 							</header>
 							<p>Si no encuentras tu plataforma favorita, consultame !</p>
-							
 							<p><a href="https://wa.me/51986682144" class="btn-pedir-ahora">Consultar ahora</a></p>
 						</article>
 
